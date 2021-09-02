@@ -99,6 +99,12 @@ export const StyledButton = styled.TouchableOpacity`
   height: 60px;
 `;
 
+export const StyledButtong = styled.TouchableOpacity`
+  background-color: ${green};
+  flex-direction: row;
+  justify-content: center;
+`;
+
 export const ButtonText = styled.Text`
   color: ${primary};
   font-size: 18px;
@@ -110,8 +116,8 @@ export const MsgBox = styled.Text`
 `;
 
 export const Line = styled.View`
-    height: 1px;
-    width: 100%;
-    background-color: ${darkLight};
-    margin-vertical: 10px;
+  height: 1px;
+  width: 100%;
+  background-color: ${darkLight};
+  margin-vertical: 10px;
 `;
