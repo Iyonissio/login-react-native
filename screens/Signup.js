@@ -37,6 +37,11 @@ import { View } from 'react-native';
 //cores
 const { brand, darkLight, primary } = Colors;
 
+
+//keyboard avoiding view
+import KeyboardAvoidingWrapper from '../components/KeyboardAvoidingWrapper';
+
+
 const Signup = () => {
     const [hidePassword, setHidePassword] = useState(true);
 
