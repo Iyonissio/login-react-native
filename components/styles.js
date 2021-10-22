@@ -110,7 +110,6 @@ export const StyledButtong = styled.TouchableOpacity`
 export const ButtonText = styled.Text`
   color: ${primary};
   font-size: 16px;
-
   ${(props) => props.google == true && `
     padding-left: 10px
   `}

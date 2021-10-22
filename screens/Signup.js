@@ -44,11 +44,12 @@ const Signup = () => {
     <StyledContainer>
       <StatusBar style="dark" />
       <InnerContainer>
-        <PageTitle> Construindo...</PageTitle>
-        <SubTitle> Cadastro na App </SubTitle>
+        
+        <PageTitle> Construindo... </PageTitle>
+        <SubTitle> Cadastro </SubTitle>
 
         <Formik
-          initialValues={{ fullName: '', email: '', dateOfBirth: '', password: '', confirmPassword: '' }}
+          initialValues={{ email: '', password: '' }}
           onSubmit={(values) => {
             console.log(values);
           }}
@@ -56,15 +57,6 @@ const Signup = () => {
           {({ handleChange, handleBlur, handleSubmit, values }) => (
             <StyledFormArea>
               <MyTextInput
-                label="Nome"
-                icon="person"
-                placeholder="Iyonissio Daniel Sitoe"
-                placeholderTextColor={darkLight}
-                onChangeText={handleChange('fullName')}
-                onBlur={handleBlur('fullName')}
-                value={values.fullName}
-              />
-               <MyTextInput
                 label="Email"
                 icon="mail"
                 placeholder="qualquer@gmail.com"
@@ -75,13 +67,24 @@ const Signup = () => {
                 keyboardType="email-address"
               />
               <MyTextInput
-                label="Data de Nascimento"
-                icon="calendar"
-                placeholder="12 de agosto de 1998"
+                label="Email"
+                icon="mail"
+                placeholder="qualquer@gmail.com"
                 placeholderTextColor={darkLight}
-                onChangeText={handleChange('dateOfBirth')}
-                onBlur={handleBlur('dateOfBirth')}
-                value={values.dateOfBirth}
+                onChangeText={handleChange('email')}
+                onBlur={handleBlur('email')}
+                value={values.email}
+                keyboardType="email-address"
+              />
+              <MyTextInput
+                label="Email"
+                icon="mail"
+                placeholder="qualquer@gmail.com"
+                placeholderTextColor={darkLight}
+                onChangeText={handleChange('email')}
+                onBlur={handleBlur('email')}
+                value={values.email}
+                keyboardType="email-address"
               />
               <MyTextInput
                 label="Senha"
@@ -97,27 +100,27 @@ const Signup = () => {
                 setHidePassword={setHidePassword}
               />
               <MyTextInput
-                label="Confirmar Senha"
+                label="Senha"
                 icon="lock"
                 placeholder="* * * * * *"
                 placeholderTextColor={darkLight}
-                onChangeText={handleChange('confirmPassword')}
-                onBlur={handleBlur('confirmPassword')}
+                onChangeText={handleChange('password')}
+                onBlur={handleBlur('password')}
                 value={values.password}
                 secureTextEntry={hidePassword}
                 isPassword={true}
                 hidePassword={hidePassword}
                 setHidePassword={setHidePassword}
               />
-              <MsgBox>...</MsgBox>
+             
               <StyledButton onPress={handleSubmit}>
-                  <ButtonText>Entrar</ButtonText>
+                  <ButtonText>Cadastrar-me</ButtonText>
               </StyledButton>
               <Line />
               <ExtraView>
                 <ExtraText>Ja tem uma conta ? </ExtraText>
                 <TextLink>
-                  <TextLinkContent>Entrar</TextLinkContent>
+                  <TextLinkContent>Entre</TextLinkContent>
                 </TextLink>
               </ExtraView>
             </StyledFormArea>
