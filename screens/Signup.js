@@ -49,7 +49,7 @@ const Signup = () => {
         <SubTitle> Cadastro </SubTitle>
 
         <Formik
-          initialValues={{ email: '', password: '' }}
+          initialValues={{ fullName: '',email: '', dateOfBirth: '', password: '', comfirmPassword: ''}}
           onSubmit={(values) => {
             console.log(values);
           }}
@@ -57,14 +57,13 @@ const Signup = () => {
           {({ handleChange, handleBlur, handleSubmit, values }) => (
             <StyledFormArea>
               <MyTextInput
-                label="Email"
-                icon="mail"
-                placeholder="qualquer@gmail.com"
+                label="Nome Completo"
+                icon="person"
+                placeholder="Iyonissio Daniel Sitoe"
                 placeholderTextColor={darkLight}
-                onChangeText={handleChange('email')}
-                onBlur={handleBlur('email')}
-                value={values.email}
-                keyboardType="email-address"
+                onChangeText={handleChange('fullName')}
+                onBlur={handleBlur('fullName')}
+                value={values.fullName}
               />
               <MyTextInput
                 label="Email"
@@ -83,7 +82,7 @@ const Signup = () => {
                 placeholderTextColor={darkLight}
                 onChangeText={handleChange('dateOfBirth')}
                 onBlur={handleBlur('dateOfBirth')}
-                value={values.email}
+                value={values.dateOfBirth}
               />
               <MyTextInput
                 label="Senha"
