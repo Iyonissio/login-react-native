@@ -77,14 +77,13 @@ const Signup = () => {
                 keyboardType="email-address"
               />
               <MyTextInput
-                label="Email"
-                icon="mail"
-                placeholder="qualquer@gmail.com"
+                label="Data de Aniversario"
+                icon="calendar"
+                placeholder="1956"
                 placeholderTextColor={darkLight}
-                onChangeText={handleChange('email')}
-                onBlur={handleBlur('email')}
+                onChangeText={handleChange('dateOfBirth')}
+                onBlur={handleBlur('dateOfBirth')}
                 value={values.email}
-                keyboardType="email-address"
               />
               <MyTextInput
                 label="Senha"
@@ -100,13 +99,13 @@ const Signup = () => {
                 setHidePassword={setHidePassword}
               />
               <MyTextInput
-                label="Senha"
+                label="Confirmar Senha"
                 icon="lock"
                 placeholder="* * * * * *"
                 placeholderTextColor={darkLight}
-                onChangeText={handleChange('password')}
-                onBlur={handleBlur('password')}
-                value={values.password}
+                onChangeText={handleChange('comfirmPassword')}
+                onBlur={handleBlur('comfirmPassword')}
+                value={values.comfirmPassword}
                 secureTextEntry={hidePassword}
                 isPassword={true}
                 hidePassword={hidePassword}
