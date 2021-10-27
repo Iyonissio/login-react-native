@@ -38,7 +38,7 @@ import { View } from 'react-native';
 const { brand, darkLight, primary } = Colors;
 
 
-//keyboard avoiding view
+//keyboard avoiding vieww
 import KeyboardAvoidingWrapper from '../components/KeyboardAvoidingWrapper';
 
 
