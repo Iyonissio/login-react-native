@@ -22,7 +22,7 @@ const Welcome = () => {
       <InnerContainer>
       <WelcomeImage resizeMode="contain" source={require('../assets/Frutas.jpg')} />
         <WelcomeContainer>
-          <PageTitle welcome={true}> Welcome! Brow </PageTitle>
+          <PageTitle welcome={true}> Bem vindo! Brow </PageTitle>
           <SubTitle welcome={true}> Iyonissio Daniel Sitoe </SubTitle>
           <SubTitle welcome={true}> Iyonissio01@gmail.com </SubTitle>
           <StyledFormArea>
