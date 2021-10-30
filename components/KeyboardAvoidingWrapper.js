@@ -1,5 +1,5 @@
 import React from 'react';
-import { Children } from 'react';
+import { children } from 'react';
 
 //keyboard
 
@@ -16,6 +16,6 @@ const KeyboardAvoidingWrapper = ({children}) => {
             </ScroollView>
         </KeyboardAvoidingView>
     );
-}
+};
 
 export default KeyboardAvoidingWrapper;
